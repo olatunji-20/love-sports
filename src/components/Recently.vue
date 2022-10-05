@@ -16,8 +16,6 @@
                 <div class="board"><div class="item"></div></div>
             </div>
         </div>
-        <div class="pointer2"></div>
-        <div class="pointer"></div>
 
     </section>
 
@@ -28,7 +26,7 @@
         name: 'Sale',
         data() {
             return {
-                title: "Sale items"
+                title: "Recently viewed"
             }
         }
     }
@@ -39,7 +37,7 @@
         border: 5px solid blue;
         width: 100%;
         height: auto;
-        background-color: cornsilk;
+        background-color: powderblue;
         padding: 60px 80px;
     }
 
@@ -73,27 +71,6 @@
         height: 300px;
         background-color: floralwhite;
         border: 2px solid red;
-    }
-
-    .pointer {
-        width: 50px;
-        height: 50px;
-        background-color: royalblue;
-        position: relative;
-        float: right;
-        bottom: 350px;
-        left: 20px;
-        border-radius: 50%;
-    }
- 
-    .pointer2 {
-        width: 50px;
-        height: 50px;
-        background-color: red;
-        position: relative;
-        bottom: 300px;
-        right: 20px;
-        border-radius: 50%;
     }
 
 </style>
