@@ -1,35 +1,39 @@
 <template>
     <header>
-        <section>
-            <div class="logo-container">
-
+        <div>
+            <section>
+                <div class="logo-container">
+    
+                </div>
+                <ul class="options">
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>Kids</li>
+                </ul>
+                <div class="search-bar">
+                    <input placeholder="Search..." />
+                </div>
+            </section>
+            <div class="under">
+                <ul>
+                    <li>Sports</li>
+                    <li>Footwear</li>
+                    <li>Apparel</li>
+                    <li>Bestsellers</li>
+                    <li>Special deals</li>
+                </ul>
             </div>
-            <ul class="options">
-                <li>Men</li>
-                <li>Women</li>
-                <li>Kids</li>
-            </ul>
-            <div class="search-bar">
-                <input placeholder="Search..." />
-            </div>
-        </section>
-        <div class="under">
-            <ul>
-                <li>Sports</li>
-                <li>Footwear</li>
-                <li>Apparel</li>
-                <li>Bestsellers</li>
-                <li>Special deals</li>
-            </ul>
         </div>
         <Categories />
-        <!-- <Sale /> -->
+        <Sale />
+        <Latest />
     </header>
 </template>
 
 <script>
 import Categories from '../components/Categories.vue';
-// import Sale from '@/components/Sale.vue';
+import Sale from '@/components/Sale.vue';
+import Latest from '../components/Latest.vue'
 
 
 export default {
@@ -41,7 +45,8 @@ export default {
     },
     components: {
     Categories,
-    // Sale
+    Sale,
+    Latest
 }
 
 

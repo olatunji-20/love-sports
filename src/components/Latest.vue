@@ -23,10 +23,10 @@
 
 <script>
     export default {
-        name: 'Sale',
+        name: 'Latest',
         data() {
             return {
-                title: "Sale items"
+                title: "Latest products"
             }
         }
     }
@@ -37,7 +37,7 @@
         border: 5px solid blue;
         width: 100%;
         height: auto;
-        background-color: cornsilk;
+        background-color: snow;
         padding: 60px 80px;
     }
 
