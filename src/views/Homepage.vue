@@ -25,14 +25,13 @@
             </div>
         </div>
         <div class="main-container">
-
+            <Categories />
+            <Sale />
+            <Latest />
+            <Sponsors />
+            <Recently />
+            <Footer />
         </div>
-        <Categories />
-        <Sale />
-        <Latest />
-        <Sponsors />
-        <Recently />
-        <Footer />
     </header>
 </template>
 
