@@ -24,6 +24,9 @@
                 </ul>
             </div>
         </div>
+        <div class="main-container">
+
+        </div>
         <Categories />
         <Sale />
         <Latest />
@@ -50,12 +53,12 @@ export default {
         };
     },
     components: {
-    Categories,
-    Sale,
-    Latest,
-    Sponsors,
-    Recently,
-    Footer
+        Categories,
+        Sale,
+        Latest,
+        Sponsors,
+        Recently,
+        Footer
 }
 
 
@@ -71,8 +74,14 @@ section {
     text-align: left;
 }
 
+.main-container {
+    border: 9px solid blueviolet;
+    width: 100%;
+    height: auto;
+    padding: 100px 0px;
+}
 .logo-container {
-    width: 200px;
+    width: 200px;       
     height: 40px;
     border: 1px solid red;
     position: relative;
