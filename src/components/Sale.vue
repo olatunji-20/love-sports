@@ -9,6 +9,11 @@
                         <div class="love"></div>
                         <div class="free"><img class="motor" src="../assets/motor.png" /><p>Free shipping</p></div>
                     </div>
+                    <p style="display: inline">E99</p><p style="display: inline; padding-left: 10px; text-decoration: line-through;">E65</p>
+                    <p>jjdjjd</p>
+                    <h5 style="display: inline;">HEAD |</h5> <p style="display: inline">hdhfhdfb</p>
+                    <p>Sizes: <span style="font-weight: bolder">S M L XL</span></p>
+                    <button class="view">View the item</button>
                 </div>
                 <div class="board">
                     <div class="item">
@@ -130,10 +135,17 @@
 
     .board {
         width: 260px;
-        height: 480px;
+        height: 385px;
         padding: 4px;
         border: 1px solid black;
         margin: 5px;
+        line-height: 8px;
+        overflow: hidden;
+    }
+
+    .board:hover {
+        height: 470px;
+        transition: .5s;
     }
 
     .board .item {
@@ -142,6 +154,7 @@
         background-color: floralwhite;
         border: 2px solid red;
         padding: 5px;
+        margin-bottom: 15px;
     }
 
     .discount {
@@ -177,6 +190,7 @@
         display: inline;
         padding-left: 5px;
         font-size: 12px;
+        line-height: 18px;
     }
     .free:hover {
         width: 115px;
@@ -187,6 +201,15 @@
         height: 20px;
         float: right;
         display: inline;
+    }
+
+    .view {
+        width: 100%;
+        height: 40px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
     }
     .pointer {
         width: 50px;
