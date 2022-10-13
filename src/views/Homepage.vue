@@ -3,7 +3,7 @@
         <div>
             <section>
                 <div class="logo-container">
-
+                    <img src="../assets/lovesport.png" class="logo" />
                 </div>
                 <ul class="options">
                     <li>Men</li>
@@ -12,11 +12,17 @@
                 </ul>
                 <div class="search-bar">
                     <input placeholder="Search..." />
+                    <div class="love"></div>
+                    <div class="love"></div>
                 </div>
             </section>
             <div class="under">
                 <ul>
-                    <li>Sports</li>
+                    <li @mouseenter="dropdown" @mouseleave="undrop" class="dropdown">Sports</li>
+                        <div v-show="drop" class="dropdown-content">
+                            <p>fhhfifie</p>
+                            <p>jdhhfioi</p>
+                        </div>
                     <li>Footwear</li>
                     <li>Apparel</li>
                     <li>Bestsellers</li>
@@ -48,8 +54,16 @@ export default {
     name: "Homepage",
     data() {
         return {
-
+            drop: false
         };
+    },
+    methods: {
+        dropdown() {
+            this.drop = true
+        },
+        undrop() {
+            this.drop =  false
+        }
     },
     components: {
         Categories,
@@ -81,12 +95,17 @@ section {
 }
 .logo-container {
     width: 200px;       
-    height: 40px;
+    height: 35px;
     border: 1px solid red;
     position: relative;
     float: left;
     display: inline;
     margin: 15px 20px 15px 80px;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
 }
 
 .options {
@@ -108,9 +127,22 @@ section {
     height: 45px;
     padding: 10px;
     margin: 10px 30px;
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     position: relative;
     float: right;
+}
+
+.search-bar input {
+    width: 300px;
+    text-indent: 20px;
+}
+
+.love {
+    width: 30px;
+    height: 25px;
+    background-color: lawngreen;
 }
 
 .under {
@@ -122,8 +154,35 @@ section {
     text-align: left;
 }
 
+@keyframes sheriff {
+    0% {
+        top: 140px;
+        opacity: 0;
+    }
+    100% {
+        top: 115px;
+        opacity: 1;
+    }
+}
+.dropdown-content {
+    width: 130px;
+    height: auto;
+    border: 2px solid green;
+    background-color: beige;
+    position: absolute;
+    text-align: left;
+    padding: 5px;
+    animation-name: sheriff;
+    animation-duration: .6s;
+    animation-timing-function: ease-in-out;
+}
+.dropdown:hover .dropdown-content {
+    background-color: burlywood;
+}
+
 .under ul {
     margin-left: 20px;
+    border: 1px solid orangered;
 }
 
 .under ul li {

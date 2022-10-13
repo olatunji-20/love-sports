@@ -2,13 +2,31 @@
     <section>
         <h1>{{ title }}</h1>
         <div class="container">
-            <div class="cate"><h3>Skiing</h3></div>
-                <div class="cate"><h3>Sport watches</h3></div>
-                <div class="cate"><h3>Racket sport</h3></div>
-                <div class="cate"><h3>Bikes</h3></div>
-                <div class="cate"><h3>Footwear</h3></div>
-                <div class="cate"><h3>Leisure game</h3></div>
+            <div class="cate">
+                <img class="img" src="../assets/skiing.png" />
+                <h3>Skiing</h3>
             </div>
+            <div class="cate">
+                <img class="img" src="../assets/watches.png" />
+                <h3>Sport watches</h3>
+            </div>
+            <div class="cate">
+                <img class="img" src="../assets/racket.png" />
+                <h3>Racket sport</h3>
+            </div>
+            <div class="cate">
+                <img class="img" src="../assets/bike.png" />
+                <h3>Bikes</h3>
+            </div>
+            <div class="cate">
+                <img class="img" src="../assets/max.png" />
+                <h3>Footwear</h3>
+            </div>
+            <div class="cate">
+                <img class="img" src="../assets/leisure.png" />
+                <h3>Leisure game</h3>
+            </div>
+        </div>
     </section>
 </template>
 
@@ -52,8 +70,16 @@
         text-align: center;
     }
 
+    .cate .img {
+        height: 100%;
+        width: 100%;
+        filter: contrast(70%)
+    }
     .cate h3 {
-        margin-top: 185px;
+        position: relative;
+        bottom: 55px;
+        z-index: 9;
+        color: white;
     }
     
 </style>
